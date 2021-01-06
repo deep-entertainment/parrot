@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/parrot/scenes/importer.gd" type="Script" id=1]
+
+[node name="Importer" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ImportDialog" type="FileDialog" parent="."]
+margin_right = 360.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 200, 400 )
+window_title = "Datei öffnen"
+resizable = true
+dialog_text = "Please select the dialog csv"
+mode = 0
+
+[node name="TargetDialog" type="FileDialog" parent="."]
+margin_right = 373.0
+margin_bottom = 387.0
+rect_min_size = Vector2( 200, 400 )
+window_title = "Verzeichnis wählen"
+resizable = true
+dialog_text = "Please select the target folder for the generated Dialogs"
+mode = 2
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_right = 108.0
+margin_bottom = 58.0
+window_title = "Import successful"
+dialog_text = "The dialog resources where generated from the import file."
+[connection signal="file_selected" from="ImportDialog" to="." method="_on_ImportDialog_file_selected"]
+[connection signal="dir_selected" from="TargetDialog" to="." method="_on_TargetDialog_dir_selected"]
