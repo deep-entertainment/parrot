@@ -1,6 +1,7 @@
 # A resource describing one line in a dialogue
 tool
-class_name DialogLineResource
+class_name DialogLineResource, \
+		"res://addons/parrot/icons/dialog_line.svg"
 extends Resource
 
 

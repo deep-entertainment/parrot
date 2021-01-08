@@ -1,6 +1,7 @@
 # A resource describing a dialog character
 tool
-class_name CharacterResource
+class_name CharacterResource, \
+		"res://addons/parrot/icons/character.svg"
 extends Resource
 
 
