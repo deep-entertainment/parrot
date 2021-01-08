@@ -82,11 +82,17 @@ func advance():
 	
 	if _current_dialog.lines.size() <= _current_line:
 		print_debug("We're through. Emit the finished_dialog signal.")
+		$Background.hide()
 		emit_signal("finished_dialog", _current_dialog.id)
 	else:
 		var line = _current_dialog.lines[_current_line] as DialogLineResource
 		var text = line.text
 		var character = line.character as CharacterResource
+		
+		if line.image != null:
+			print_debug("Showing image")
+			$Background.visible = true
+			$Background.texture = line.image
 		
 		print_debug(
 			"Speaking %s as character %s" % [text, character.name]
