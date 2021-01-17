@@ -31,6 +31,9 @@ var _current_dialog: DialogResource
 # The line in the current dialog
 var _current_line: int
 
+# Wether a dialog is currently playing
+var _dialog_playing: bool
+
 
 # Hide the subtitles when starting
 func _ready():
@@ -39,7 +42,7 @@ func _ready():
 
 # Skip the line on ui_skip action
 func _input(event):
-	if event.is_action_released("ui_skip"):
+	if _dialog_playing and event.is_action_released("ui_skip"):
 		advance()
 
 
@@ -65,6 +68,7 @@ func configure(theme: Theme):
 func play(dialog: DialogResource):
 	_current_dialog = dialog
 	_current_line = -1
+	_dialog_playing = true
 	advance()
 
 
@@ -83,6 +87,7 @@ func advance():
 	if _current_dialog.lines.size() <= _current_line:
 		print_debug("We're through. Emit the finished_dialog signal.")
 		$Background.hide()
+		_dialog_playing = false
 		emit_signal("finished_dialog", _current_dialog.id)
 	else:
 		var line = _current_dialog.lines[_current_line] as DialogLineResource
