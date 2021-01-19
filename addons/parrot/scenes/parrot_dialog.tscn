@@ -103,7 +103,6 @@ margin_right = 108.0
 margin_bottom = 58.0
 window_title = "Import successful"
 dialog_text = "The dialog resources where generated from the import file."
-[connection signal="pressed" from="VBox/Skip" to="." method="_on_Skip_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="file_selected" from="ImportDialog" to="." method="_on_ImportDialog_file_selected"]
 [connection signal="dir_selected" from="TargetDialog" to="." method="_on_TargetDialog_dir_selected"]

@@ -44,6 +44,7 @@ func _ready():
 func _input(event):
 	if _dialog_playing and event.is_action_released("ui_skip"):
 		advance()
+		$VBox.accept_event()
 
 
 # Configure Parrot. Set the theme to be used for the dialogs
@@ -146,13 +147,6 @@ func advance():
 			$VBox.show()
 		
 		$Timer.start(line_length)
-
-
-
-# The player hit the skip panel
-func _on_Skip_pressed():
-	$VBox/Skip.release_focus()
-	advance()
 
 
 # The voice and subtitle time has finished
