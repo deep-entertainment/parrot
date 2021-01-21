@@ -16,7 +16,7 @@ var voices_path: String = "res://voices"
 var voices_ext: String = "ogg"
 
 # How much pause time to add
-var time_addendum_seconds: int = 2
+var time_addendum_seconds: float = 2.0
 
 # The assumed readin speech (if no voice file exists for a line)
 var reading_speed_words_per_minute: int = 160
