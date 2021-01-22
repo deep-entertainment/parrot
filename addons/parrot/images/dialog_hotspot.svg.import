@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dialog_line.svg-75dc5144eb67854eff3be6470a6ba80f.stex"
+path="res://.import/dialog_hotspot.svg-23890401d8dac30ad3dfa801cd4ded46.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/parrot/icons/dialog_line.svg"
-dest_files=[ "res://.import/dialog_line.svg-75dc5144eb67854eff3be6470a6ba80f.stex" ]
+source_file="res://addons/parrot/images/dialog_hotspot.svg"
+dest_files=[ "res://.import/dialog_hotspot.svg-23890401d8dac30ad3dfa801cd4ded46.stex" ]
 
 [params]
 

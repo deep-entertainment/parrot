@@ -2,6 +2,9 @@
 extends CanvasLayer
 
 
+# Emitted when parrot was configured
+signal parrot_configured
+
 # Emitted when a line was finished
 signal finished_line
 
@@ -23,6 +26,12 @@ var reading_speed_words_per_minute: int = 160
 
 # Wether subtitles are displayed
 var subtitles = true
+
+# Theme
+var theme: Theme
+
+# Dialog hotspot cursor
+var dialog_hotspot_cursor_shape: int = Input.CURSOR_IBEAM
 
 
 # The current dialog playing
@@ -48,7 +57,8 @@ func _input(event):
 
 
 # Configure Parrot. Set the theme to be used for the dialogs
-func configure(theme: Theme):
+func configure(p_theme: Theme):
+	theme = p_theme
 	$VBox/Skip/Panel.theme = theme
 	$VBox/Skip/Panel.add_stylebox_override(
 		"panel", 
@@ -60,6 +70,7 @@ func configure(theme: Theme):
 			"dialog_font", "RichTextLabel"
 		)
 	)
+	emit_signal("parrot_configured")
 
 
 # Play the specified dialog

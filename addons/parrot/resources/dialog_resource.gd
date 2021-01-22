@@ -1,7 +1,7 @@
 # A dialog of characters speaking (or a monolog as well)
 tool
 class_name DialogResource, \
-		"res://addons/parrot/icons/dialog.svg"
+		"res://addons/parrot/images/dialog.svg"
 extends Resource
 
 
