@@ -53,7 +53,7 @@ func _ready():
 func _input(event):
 	if _dialog_playing and event.is_action_released("ui_skip"):
 		advance()
-		$VBox.accept_event()
+		get_tree().set_input_as_handled()
 
 
 # Configure Parrot. Set the theme to be used for the dialogs
