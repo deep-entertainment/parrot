@@ -79,6 +79,7 @@ func configure(p_theme: Theme):
 # ** Arguments **
 # - dialog: The dialog to play
 func play(dialog: DialogResource):
+	dialog.id = dialog.resource_path.get_basename().get_file()
 	_current_dialog = dialog
 	_current_line = -1
 	_dialog_playing = true

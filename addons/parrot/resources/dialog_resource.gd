@@ -19,10 +19,6 @@ var lines: Array
 func _get_property_list() -> Array:
 	var properties = []
 	properties.append({
-		name = "id",
-		type = TYPE_STRING,
-	})
-	properties.append({
 		name = "lines",
 		type = TYPE_ARRAY,
 		hint = 24,
