@@ -66,8 +66,9 @@ func configure(p_theme: Theme):
 	)
 	$VBox/Skip/Panel/Margin/Text.add_font_override(
 		"normal_font",
-		$VBox/Skip/Panel/Margin/Text.get_stylebox(
-			"dialog_font", "RichTextLabel"
+		$VBox/Skip/Panel/Margin/Text.get_font(
+			"dialog_font", 
+			"RichTextLabel"
 		)
 	)
 	emit_signal("parrot_configured")
