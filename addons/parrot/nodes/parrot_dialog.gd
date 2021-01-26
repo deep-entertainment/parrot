@@ -84,6 +84,13 @@ func play(dialog: DialogResource):
 	_current_line = -1
 	_dialog_playing = true
 	advance()
+	
+	
+# Cancel the currently running dialog
+func cancel():
+	$Voice.stop()
+	$VBox.hide()
+	$Timer.stop()
 
 
 # Advance one line in the dialog
