@@ -124,13 +124,15 @@ func advance():
 			"Speaking %s as character %s" % [text, character.name]
 		)
 		
-		var voices_dir = Directory.new()
-		voices_dir.open(voices_path)
-		
 		var line_length = time_addendum_seconds
 		
-		if voices_dir.file_exists(
-			"%s-%s.%s" % [_current_dialog.id, _current_line, voices_ext]
+		if ResourceLoader.exists(
+			"%s/%s-%s.%s" % [
+				voices_path, 
+				_current_dialog.id, 
+				_current_line, 
+				voices_ext
+			]
 		):
 			print_debug(
 				"We have a voice file. Calculate the time " + \
