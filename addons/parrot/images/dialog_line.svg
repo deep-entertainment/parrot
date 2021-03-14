@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dialog_line</title>
+    <g id="dialog_line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13,3.5 L13.5,10.995665 L3.436,11.489 L3.5,11.2657194 L3.5,4 L13,3.5 Z" id="Rectangle" stroke="#FFFFFF"></path>
+        <line x1="5.5" y1="5.5" x2="10.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square"></line>
+        <line x1="5.5" y1="7.5" x2="6.5" y2="7.5" id="Line-2" stroke="#FFFFFF" stroke-linecap="square"></line>
+        <line x1="8.5" y1="7.5" x2="11.5" y2="7.5" id="Line-3" stroke="#FFFFFF" stroke-linecap="square"></line>
+        <line x1="5.5" y1="9.5" x2="9.5" y2="9.5" id="Line-4" stroke="#FFFFFF" stroke-linecap="square"></line>
+    </g>
+</svg>

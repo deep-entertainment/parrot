@@ -1,0 +1,1 @@
+dialog_id;character_name;character_color;text
