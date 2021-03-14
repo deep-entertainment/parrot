@@ -35,3 +35,7 @@ As this framework is used internally at Mdna Games, we'll have to consider each 
 If a new feature doesn't match or contradicts our needs, we might refuse to accept it, but welcome you to fork this repository and implement it yourself.
 
 You're welcomed to open pull requests about bugs or (confirmed) features any time and we'll review it and might ask you for modifications. Thank you for your work!
+
+## Logo
+
+Logo based on ["Pirate Parrot" by Klàro on OpenClipart](https://openclipart.org/detail/244587/pirate-parrot)
