@@ -67,9 +67,9 @@ __meta__ = {
 
 [node name="Text" type="RichTextLabel" parent="VBox/Skip/Panel/Margin"]
 margin_left = 20.0
-margin_top = 193.0
+margin_top = 207.0
 margin_right = 2540.0
-margin_bottom = 300.0
+margin_bottom = 287.0
 mouse_filter = 2
 size_flags_vertical = 4
 bbcode_enabled = true
