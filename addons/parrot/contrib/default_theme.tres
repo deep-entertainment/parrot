@@ -1,0 +1,45 @@
+[gd_resource type="Theme" load_steps=10 format=2]
+
+[ext_resource path="res://addons/parrot/contrib/OpenSans-Italic.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://addons/parrot/contrib/OpenSans-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://addons/parrot/contrib/OpenSans-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://addons/parrot/contrib/OpenSans-BoldItalic.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.65098 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[resource]
+Panel/styles/dialog_panel = SubResource( 1 )
+RichTextLabel/fonts/dialog_bold_font = SubResource( 2 )
+RichTextLabel/fonts/dialog_bold_italics_font = SubResource( 3 )
+RichTextLabel/fonts/dialog_italics_font = SubResource( 4 )
+RichTextLabel/fonts/dialog_mono_font = null
+RichTextLabel/fonts/dialog_normal_font = SubResource( 5 )

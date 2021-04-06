@@ -24,6 +24,8 @@ Features:
 
 * [Dialog import](docs/import.md)
 
+* [Theming](docs/theming.md)
+
 * [API-Docs](docs/api)
 
 ## Development
