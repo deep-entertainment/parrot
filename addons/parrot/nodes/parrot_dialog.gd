@@ -65,9 +65,37 @@ func configure(p_theme: Theme):
 		$VBox/Skip/Panel.get_stylebox("dialog_panel", "Panel")
 	)
 	$VBox/Skip/Panel/Margin/Text.add_font_override(
+		"mono_font",
+		$VBox/Skip/Panel/Margin/Text.get_font(
+			"dialog_mono_font", 
+			"RichTextLabel"
+		)
+	)
+	$VBox/Skip/Panel/Margin/Text.add_font_override(
+		"bold_italics_font",
+		$VBox/Skip/Panel/Margin/Text.get_font(
+			"dialog_bold_italics_font", 
+			"RichTextLabel"
+		)
+	)
+	$VBox/Skip/Panel/Margin/Text.add_font_override(
+		"italics_font",
+		$VBox/Skip/Panel/Margin/Text.get_font(
+			"dialog_italics_font", 
+			"RichTextLabel"
+		)
+	)
+	$VBox/Skip/Panel/Margin/Text.add_font_override(
+		"bold_font",
+		$VBox/Skip/Panel/Margin/Text.get_font(
+			"dialog_bold_font", 
+			"RichTextLabel"
+		)
+	)
+	$VBox/Skip/Panel/Margin/Text.add_font_override(
 		"normal_font",
 		$VBox/Skip/Panel/Margin/Text.get_font(
-			"dialog_font", 
+			"dialog_normal_font", 
 			"RichTextLabel"
 		)
 	)
