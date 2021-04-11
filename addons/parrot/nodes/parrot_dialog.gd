@@ -12,6 +12,9 @@ signal finished_line
 signal finished_dialog
 
 
+# The base path where the dialog resources are
+var dialog_path: String = "res://dialogs"
+
 # The path where the voice file are
 var voices_path: String = "res://voices"
 
@@ -107,7 +110,10 @@ func configure(p_theme: Theme):
 # ** Arguments **
 # - dialog: The dialog to play
 func play(dialog: DialogResource):
-	dialog.id = dialog.resource_path.get_basename().get_file()
+	dialog.id = dialog.resource_path.get_basename().replace(
+		dialog_path + "/", 
+		""
+	)
 	_current_dialog = dialog
 	_current_line = -1
 	_dialog_playing = true
