@@ -10,6 +10,14 @@ Parrot dialog main scene
 
 ## Property Descriptions
 
+### dialog\_path
+
+```gdscript
+var dialog_path: String = "res://dialogs"
+```
+
+The base path where the dialog resources are
+
 ### voices\_path
 
 ```gdscript
