@@ -66,14 +66,6 @@ var theme: Theme
 
 Theme
 
-### dialog\_hotspot\_cursor\_shape
-
-```gdscript
-var dialog_hotspot_cursor_shape: int
-```
-
-Dialog hotspot cursor
-
 ## Method Descriptions
 
 ### configure

@@ -33,9 +33,6 @@ var subtitles = true
 # Theme
 var theme: Theme
 
-# Dialog hotspot cursor
-var dialog_hotspot_cursor_shape: int = Input.CURSOR_IBEAM
-
 
 # The current dialog playing
 var _current_dialog: DialogResource
