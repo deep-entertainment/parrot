@@ -188,7 +188,14 @@ func advance():
 			var words = text.split(' ', false).size()
 			line_length = \
 				line_length + \
-				ceil(words / reading_speed_words_per_minute * 60)
+				ceil(float(words) / reading_speed_words_per_minute * 60)
+			print_debug(
+				"Calculated length for %d words and %f reading speed: %d" % [
+					words,
+					reading_speed_words_per_minute,
+					line_length
+				]
+			)
 		
 		if subtitles:
 			print_debug("Displaying subtitles")
