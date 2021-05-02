@@ -66,6 +66,15 @@ var theme: Theme
 
 Theme
 
+### ignore\_pause
+
+```gdscript
+var ignore_pause: bool
+```
+
+Let parrot ignore game pausing. So dialog will continue
+playing when a game is paused
+
 ## Method Descriptions
 
 ### configure
