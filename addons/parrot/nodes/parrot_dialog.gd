@@ -33,6 +33,10 @@ var subtitles = true
 # Theme
 var theme: Theme
 
+# Let parrot ignore game pausing. So dialog will continue
+# playing when a game is paused
+var ignore_pause: bool setget _set_ignore_pause
+
 
 # The current dialog playing
 var _current_dialog: DialogResource
@@ -212,3 +216,12 @@ func advance():
 # The voice and subtitle time has finished
 func _on_Timer_timeout():
 	advance()
+
+
+# Set the ignore pause
+func _set_ignore_pause(value: bool):
+	ignore_pause = value
+	if ignore_pause:
+		pause_mode = Node.PAUSE_MODE_PROCESS
+	else:
+		pause_mode = Node.PAUSE_MODE_STOP
