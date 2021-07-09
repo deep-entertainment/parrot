@@ -80,10 +80,15 @@ playing when a game is paused
 ### configure
 
 ```gdscript
-func configure(p_theme: Theme)
+func configure(p_theme: Theme, stretch_ratio: float)
 ```
 
-Configure Parrot. Set the theme to be used for the dialogs
+Configure Parrot. Set the theme to be used for the dialogs and the
+stretch ratio
+
+** Arguments **
+- p_theme: Theme to configure
+- stretch_ratio: Stretch ratio for the subtitle panel spacer
 
 ### play
 
