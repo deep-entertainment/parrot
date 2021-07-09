@@ -1,2 +1,2 @@
-See [addons/parrot/LICENSE.md](addons/parrot/LICENSE.md)
+See [addons/parrot/LICENSE](addons/parrot/LICENSE)
 
