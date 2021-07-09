@@ -60,8 +60,13 @@ func _input(event):
 		get_tree().set_input_as_handled()
 
 
-# Configure Parrot. Set the theme to be used for the dialogs
-func configure(p_theme: Theme):
+# Configure Parrot. Set the theme to be used for the dialogs and the 
+# stretch ratio
+# 
+# ** Arguments **
+# - p_theme: Theme to configure
+# - stretch_ratio: Stretch ratio for the subtitle panel spacer
+func configure(p_theme: Theme, stretch_ratio: float):
 	theme = p_theme
 	$VBox/Skip/Panel.theme = theme
 	$VBox/Skip/Panel.add_stylebox_override(
@@ -103,6 +108,7 @@ func configure(p_theme: Theme):
 			"RichTextLabel"
 		)
 	)
+	$VBox/Spacer.size_flags_stretch_ratio = stretch_ratio
 	emit_signal("parrot_configured")
 
 
