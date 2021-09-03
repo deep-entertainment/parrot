@@ -1,3 +1,12 @@
+## [0.9.0](https://github.com/deep-entertainment/parrot/compare/0.8.0...0.9.0) (2021-09-03)
+
+
+### Features
+
+* Fixed dialog canvas layer so it complies better with Egoventure fixes [#6](https://github.com/deep-entertainment/parrot/issues/6) ([82508a2](https://github.com/deep-entertainment/parrot/commit/82508a26a27549dc3fcf433256ea029e3b8a3122))
+
+
+
 ## [0.8.0](https://github.com/deep-entertainment/parrot/compare/0.7.0...0.8.0) (2021-07-09)
 
 
