@@ -1,3 +1,4 @@
+/addons/pluginsenabler      export-ignore
 /docs                       export-ignore
 /design                     export-ignore
 /.github                    export-ignore
@@ -7,4 +8,4 @@
 /CHANGELOG.md               export-ignore
 /README.md                  export-ignore
 /LICENSE.md                 export-ignore
-
+/project.godot              export-ignore
