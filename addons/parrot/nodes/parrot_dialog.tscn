@@ -87,7 +87,7 @@ __meta__ = {
 margin_right = 360.0
 margin_bottom = 130.0
 rect_min_size = Vector2( 400, 140 )
-window_title = "Open a File"
+window_title = "Datei öffnen"
 dialog_text = "Please select the dialog csv"
 mode = 0
 
@@ -95,7 +95,7 @@ mode = 0
 margin_right = 360.0
 margin_bottom = 130.0
 rect_min_size = Vector2( 400, 140 )
-window_title = "Open a Directory"
+window_title = "Verzeichnis wählen"
 dialog_text = "Please select the target folder for the generated Dialogs"
 mode = 2
 
