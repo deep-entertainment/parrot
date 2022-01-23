@@ -1,3 +1,19 @@
+### [0.10.1](https://github.com/deep-entertainment/parrot/compare/0.10.0...0.10.1) (2022-01-23)
+
+
+### Bug Fixes
+
+* Voice bus volume doesn't work. ([141718b](https://github.com/deep-entertainment/parrot/commit/141718b2f80fe5291ac6ffc2a5e04e54ec120d8a))
+
+
+### Documentation
+
+* Added missing docs and workflows ([c8d7916](https://github.com/deep-entertainment/parrot/commit/c8d7916997349a1329568f949d6d69cc49637599))
+* Automatic update of API docs ([1546378](https://github.com/deep-entertainment/parrot/commit/1546378949ed507ba1da065c9ab17f27e3ca279c))
+* Automatic update of API docs ([32e89e1](https://github.com/deep-entertainment/parrot/commit/32e89e119b0752b6dd61f283b150e6d2eca693ea))
+
+
+
 ## [0.8.0](https://github.com/deep-entertainment/parrot/compare/0.7.0...0.8.0) (2021-07-09)
 
 
