@@ -9,5 +9,5 @@
   "download_commit": "{{ env.GITHUB_SHA }}",
   "browse_url": "{{ context.repository.html_url }}",
   "issues_url": "{{ context.repository.html_url }}/issues",
-  "icon_url": "https://github.com/deep-entertainment/parrot/raw/0.1.0/docs/images/logo.png"
+  "icon_url": "https://raw.githubusercontent.com/deep-entertainment/parrot/develop/docs/images/logo.png"
 }
