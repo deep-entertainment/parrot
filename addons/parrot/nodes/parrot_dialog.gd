@@ -159,7 +159,7 @@ func advance():
 		emit_signal("finished_dialog", _current_dialog.id)
 	else:
 		var line = _current_dialog.lines[_current_line] as DialogLineResource
-		var text = line.text
+		var text = tr(line.text)
 		var character = line.character as CharacterResource
 		
 		if line.image != null:
@@ -174,6 +174,32 @@ func advance():
 		var line_length = time_addendum_seconds
 		
 		if ResourceLoader.exists(
+			"%s/%s-%s-%s.%s" % [
+				voices_path, 
+				_current_dialog.id, 
+				_current_line, 
+				TranslationServer.get_locale(),
+				voices_ext
+			]
+		):
+			print_debug(
+				"We have a localized voice file. Calculate the time " + \
+				"to advance to the next line"
+			)
+			
+			var voice_sound = load(
+				"%s/%s-%s-%s.%s" % [
+					voices_path, 
+					_current_dialog.id, 
+					_current_line, 
+					TranslationServer.get_locale(),
+					voices_ext]
+			) as AudioStream
+			line_length = line_length + voice_sound.get_length()
+			$Voice.stream = voice_sound
+			print_debug("Playing localized voice file")
+			$Voice.play()
+		elif ResourceLoader.exists(
 			"%s/%s-%s.%s" % [
 				voices_path, 
 				_current_dialog.id, 
