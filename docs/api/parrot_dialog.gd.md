@@ -8,6 +8,16 @@
 
 Parrot dialog main scene
 
+## Constants Descriptions
+
+### DURATION\_NO\_SKIP
+
+```gdscript
+const DURATION_NO_SKIP: float = 0.5
+```
+
+Duration in seconds that mouse clicks are ignored when starting a dialog line
+
 ## Property Descriptions
 
 ### dialog\_path
