@@ -12,6 +12,10 @@ signal finished_line
 signal finished_dialog
 
 
+# Duration in seconds that mouse clicks are ignored when starting a dialog line
+const DURATION_NO_SKIP = 0.5
+
+
 # The base path where the dialog resources are
 var dialog_path: String = "res://dialogs"
 
@@ -47,6 +51,9 @@ var _current_line: int
 # Wether a dialog is currently playing
 var _dialog_playing: bool
 
+# Length of timer when playing a dialog line
+var _timer_length: float
+
 
 # Hide the subtitles when starting
 func _ready():
@@ -55,7 +62,8 @@ func _ready():
 
 # Skip the line on ui_skip action
 func _input(event):
-	if _dialog_playing and event.is_action_released("ui_skip"):
+	if _dialog_playing and event.is_action_released("ui_skip") and \
+			(_timer_length - $Timer.time_left) > DURATION_NO_SKIP:
 		advance()
 		get_tree().set_input_as_handled()
 
@@ -249,6 +257,7 @@ func advance():
 			$VBox.show()
 		
 		$Timer.start(line_length)
+		_timer_length = line_length
 
 
 # The voice and subtitle time has finished
