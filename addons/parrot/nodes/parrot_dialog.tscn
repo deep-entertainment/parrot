@@ -68,9 +68,9 @@ __meta__ = {
 
 [node name="Text" type="RichTextLabel" parent="VBox/Skip/Panel/Margin"]
 margin_left = 20.0
-margin_top = 207.0
+margin_top = 197.0
 margin_right = 2540.0
-margin_bottom = 287.0
+margin_bottom = 296.0
 mouse_filter = 2
 size_flags_vertical = 4
 bbcode_enabled = true
@@ -87,7 +87,7 @@ __meta__ = {
 margin_right = 360.0
 margin_bottom = 130.0
 rect_min_size = Vector2( 400, 140 )
-window_title = "Datei öffnen"
+window_title = "Open a File"
 dialog_text = "Please select the dialog csv"
 mode = 0
 
@@ -95,7 +95,7 @@ mode = 0
 margin_right = 360.0
 margin_bottom = 130.0
 rect_min_size = Vector2( 400, 140 )
-window_title = "Verzeichnis wählen"
+window_title = "Open a Directory"
 dialog_text = "Please select the target folder for the generated Dialogs"
 mode = 2
 
