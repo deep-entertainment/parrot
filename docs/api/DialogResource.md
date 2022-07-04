@@ -21,7 +21,7 @@ The descriptive id of this dialog
 ### lines
 
 ```gdscript
-var lines: Array
+export var lines: Array = []
 ```
 
 A list of dialog lines to speak

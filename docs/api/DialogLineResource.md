@@ -13,7 +13,7 @@ A resource describing one line in a dialogue
 ### character
 
 ```gdscript
-var character: Resource
+export var character: Resource = "[Object:null]"
 ```
 
 The character speaking
@@ -21,7 +21,7 @@ The character speaking
 ### text
 
 ```gdscript
-var text: String
+export var text: String = ""
 ```
 
 The text the character says
@@ -29,7 +29,7 @@ The text the character says
 ### image
 
 ```gdscript
-var image: Texture
+export var image: Texture = "[Object:null]"
 ```
 
 An image that is displayed full screen while the line is shown
