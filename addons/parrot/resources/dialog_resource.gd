@@ -9,19 +9,5 @@ extends Resource
 var id: String
 
 # A list of dialog lines to speak
-var lines: Array
+export(Array, Resource) var lines: Array
 
-
-# Build the property list
-#
-# ** Returns **
-# - The list of properties
-func _get_property_list() -> Array:
-	var properties = []
-	properties.append({
-		name = "lines",
-		type = TYPE_ARRAY,
-		hint = 24,
-		hint_string = "17/17:DialogLineResource"
-	})
-	return properties
