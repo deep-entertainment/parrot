@@ -1,3 +1,21 @@
+### [1.0.2-develop.0](https://github.com/deep-entertainment/parrot/compare/1.0.1...1.0.2-develop.0) (2022-08-01)
+
+
+### Bug Fixes
+
+* Fixed icon for assetlib ([b7c160e](https://github.com/deep-entertainment/parrot/commit/b7c160e2071095b728d64de6bd2f8306271d5418))
+
+
+### Documentation
+
+* Added missing docs and workflows ([ff89062](https://github.com/deep-entertainment/parrot/commit/ff89062c6c910cf4104f54bd5474b42053c5e682))
+* Automatic update of API docs ([89259ad](https://github.com/deep-entertainment/parrot/commit/89259ad9572718cd8193a0212a492438a24131cc))
+* Automatic update of API docs ([2f1229e](https://github.com/deep-entertainment/parrot/commit/2f1229e30d222b76a3db554a9911442f1ea944fe))
+* Automatic update of API docs ([4eb5787](https://github.com/deep-entertainment/parrot/commit/4eb5787d40e47de757420174d0b95b2c1ace7cd0))
+* Automatic update of API docs ([231df73](https://github.com/deep-entertainment/parrot/commit/231df737f04d1d60e8576ee5d40071e3daaaca1c))
+
+
+
 ### [0.10.2-develop.0](https://github.com/deep-entertainment/parrot/compare/0.10.1...0.10.2-develop.0) (2022-05-24)
 
 
