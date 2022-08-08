@@ -41,6 +41,9 @@ var theme: Theme
 # playing when a game is paused
 var ignore_pause: bool setget _set_ignore_pause
 
+# Enable skipping dialog lines
+var skip_enabled: bool = true setget _set_skip_enabled
+
 
 # The current dialog playing
 var _current_dialog: DialogResource
@@ -62,7 +65,8 @@ func _ready():
 
 # Skip the line on ui_skip action
 func _input(event):
-	if _dialog_playing and event.is_action_released("ui_skip") and \
+	if skip_enabled and _dialog_playing and \
+			event.is_action_released("ui_skip") and \
 			(_timer_length - $Timer.time_left) > DURATION_NO_SKIP:
 		advance()
 		get_tree().set_input_as_handled()
@@ -272,3 +276,16 @@ func _set_ignore_pause(value: bool):
 		pause_mode = Node.PAUSE_MODE_PROCESS
 	else:
 		pause_mode = Node.PAUSE_MODE_STOP
+
+
+# Set whether skipping is enabled or not
+#
+# ** Arguments **
+#
+# - value: Whether skipping is enabled
+func _set_skip_enabled(value: bool):
+	skip_enabled = value
+	$VBox.mouse_filter = Control.MOUSE_FILTER_PASS if skip_enabled else Control.MOUSE_FILTER_IGNORE
+	$VBox/Spacer.mouse_filter = Control.MOUSE_FILTER_STOP if skip_enabled else Control.MOUSE_FILTER_IGNORE
+	$VBox/Skip.mouse_filter = Control.MOUSE_FILTER_STOP if skip_enabled else Control.MOUSE_FILTER_IGNORE
+	$VBox/Skip/Panel.mouse_filter = Control.MOUSE_FILTER_STOP if skip_enabled else Control.MOUSE_FILTER_IGNORE
