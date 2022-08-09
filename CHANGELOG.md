@@ -1,3 +1,27 @@
+## [1.1.0-develop.0](https://github.com/deep-entertainment/parrot/compare/1.0.1...1.1.0-develop.0) (2022-08-09)
+
+
+### Features
+
+* Disable skipping dialog lines in Parrot ([fa200b4](https://github.com/deep-entertainment/parrot/commit/fa200b44eeed8d75711ca2e07ae494495f08776b)), closes [deep-entertainment/issues#23](https://github.com/deep-entertainment/issues/issues/23)
+
+
+### Bug Fixes
+
+* Fixed icon for assetlib ([26c6ac3](https://github.com/deep-entertainment/parrot/commit/26c6ac31cd9f66343ae5e9e2dca55ded03727d43))
+* Set _dialog_playing to false when the dialog is canceled. ([f8112f9](https://github.com/deep-entertainment/parrot/commit/f8112f9a7b712d15de5eb72c09c14f060fb6e7f7))
+
+
+### Documentation
+
+* Added missing docs and workflows ([40e809e](https://github.com/deep-entertainment/parrot/commit/40e809e409458858fb8c910fca1a0a15236b44fa))
+* Automatic update of API docs ([112551c](https://github.com/deep-entertainment/parrot/commit/112551c777564257d4d870e19def3f242230abe6))
+* Automatic update of API docs ([616d9d4](https://github.com/deep-entertainment/parrot/commit/616d9d498bcc8013e784297b4a104cd91764a6e5))
+* Automatic update of API docs ([d2ee573](https://github.com/deep-entertainment/parrot/commit/d2ee5739aa530c4678aa25749bb059b77b48b9e8))
+* Automatic update of API docs ([94e01c8](https://github.com/deep-entertainment/parrot/commit/94e01c80aa86c8f1cabbc4209371ee4249ba6838))
+
+
+
 ### [1.0.2-develop.0](https://github.com/deep-entertainment/parrot/compare/1.0.1...1.0.2-develop.0) (2022-08-01)
 
 
