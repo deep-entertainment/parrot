@@ -150,6 +150,7 @@ func cancel():
 	$Voice.stop()
 	$VBox.hide()
 	$Timer.stop()
+	_dialog_playing = false
 
 
 # Advance one line in the dialog
