@@ -85,6 +85,14 @@ var ignore_pause: bool
 Let parrot ignore game pausing. So dialog will continue
 playing when a game is paused
 
+### skip\_enabled
+
+```gdscript
+var skip_enabled: bool = true
+```
+
+Enable skipping dialog lines
+
 ## Method Descriptions
 
 ### configure
