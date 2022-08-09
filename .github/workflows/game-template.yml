@@ -11,3 +11,5 @@ jobs:
         with:
             addon: parrot
             branch: "main"
+        secrets:
+            token: "{{ secrets.DEPLOYMENT_TOKEN }}"
